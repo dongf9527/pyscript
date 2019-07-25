@@ -34,7 +34,7 @@ for one_srt in srts:
     f.seek(0)
     f.truncate()
     for line in all_the_lines:
-        line = line.replace('WEBVTT', 'String(timer) replacement have done!!!')
+        line = line.replace('WEBVTT', 'file is updated!!!')
         line = line.replace('00:', '00:00:')
         line = line.replace('01:', '00:01:')
         line = line.replace('02:', '00:02:')
@@ -47,6 +47,6 @@ for one_srt in srts:
         line = line.replace('09:', '00:09:')
         f.write(line)
     f.close()
-print("Attention! All srt files updating already done!!!")
+print("Attention! All srt files are updated!!!")
 
 
